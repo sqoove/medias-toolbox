@@ -53,20 +53,28 @@ elseif((isset($_GET['output'])) && ($_GET['output'] === 'error'))
                                 </div>
                                 <div id="handler-renamer" class="subfield <?php if((isset($opts['status'])) && ($opts['status'] === 'on')) { echo 'show'; } ?>">
                                     <?php
-                                    foreach(MEDIAS_TOOLBOX_FILETYPE as $fileExt)
+                                    foreach (MEDIAS_TOOLBOX_FILETYPE as $fileExt) 
                                     {
                                         $fieldID = uniqid();
-                                        $html = '<div class="field">';
-                                        $html.= '<span class="label">'.sprintf(__('Rename %s File', 'medias-toolbox'), strtoupper($fileExt)).'</span>';
-                                        $html.= '<div class="onoffswitch">';
-                                        $html.= '<input id="'.esc_attr($fieldID).'" type="checkbox" name="_medias_toolbox_renamer['.$fileExt.']" class="onoffswitch-checkbox" '.(((isset($opts[$fileExt])) && ($opts[$fileExt] === 'on')) ? esc_attr('checked="checked"') : '').'/>';
-                                        $html.= '<label class="onoffswitch-label" for="'.esc_attr($fieldID).'">';
-                                        $html.= '<span class="onoffswitch-inner"></span>';
-                                        $html.= '<span class="onoffswitch-switch"></span>';
-                                        $html.= '</label>';
-                                        $html.= '</div>';
-                                        $html.= '<small>'.sprintf(__('Do you want to automatically rename your %s files on upload ?', 'medias-toolbox'), strtoupper($fileExt)).'</small>';
-                                        $html.= '</div>';
+                                        $html  = '<div class="field">';
+                                        $html .= '<span class="label">'.sprintf(
+                                            /* translators: %s: file type (e.g., IMAGE, VIDEO, PDF) */
+                                            __('Rename %s File', 'medias-toolbox'),
+                                            strtoupper($fileExt)
+                                        ).'</span>';
+                                        $html .= '<div class="onoffswitch">';
+                                        $html .= '<input id="'.esc_attr($fieldID).'" type="checkbox" name="_medias_toolbox_renamer['.esc_attr($fileExt).']" class="onoffswitch-checkbox" '.((isset($opts[$fileExt]) && $opts[$fileExt] === 'on') ? 'checked="checked"' : '' ).'/>';
+                                        $html .= '<label class="onoffswitch-label" for="'.esc_attr($fieldID).'">';
+                                        $html .= '<span class="onoffswitch-inner"></span>';
+                                        $html .= '<span class="onoffswitch-switch"></span>';
+                                        $html .= '</label>';
+                                        $html .= '</div>';
+                                        $html .= '<small>'.sprintf(
+                                            /* translators: %s: file type (e.g., IMAGE, VIDEO, PDF) */
+                                            __('Do you want to automatically rename your %s files on upload ?', 'medias-toolbox'),
+                                            strtoupper($fileExt)
+                                        ).'</small>';
+                                        $html .= '</div>';
                                         echo $html;
                                     }
                                     ?>
