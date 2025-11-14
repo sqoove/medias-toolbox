@@ -1,10 +1,10 @@
 === Medias ToolBox ===
-Contributors: NeosLab
+Contributors: Sqoove
 Tags: rename, clean, file, files, media
 Requires at least: 4.9
 Tested up to: 6.8.2
 Stable tag: 1.7.8
-License URI: https://raw.githubusercontent.com/neoslabx/medias-toolbox/refs/heads/main/LICENSE
+License URI: https://raw.githubusercontent.com/sqoove/medias-toolbox/refs/heads/main/LICENSE
 
 Medias Toolbox allow you to sanitize and rename automatically media files during upload.
 

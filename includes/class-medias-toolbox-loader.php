@@ -2,7 +2,7 @@
 /**
  * Register all actions and filters for the plugin
  *
- * @link https://neoslab.com
+ * @link https://sqoove.com
  * @since 1.0.0
  *
  * @package Medias_Toolbox
@@ -13,7 +13,7 @@
  * Class `Medias_Toolbox_Loader`
  * @package Medias_Toolbox
  * @subpackage Medias_Toolbox/includes
- * @author NeosLab <contact@neoslab.com>
+ * @author Sqoove <support@sqoove.com>
 */
 class Medias_Toolbox_Loader
 {

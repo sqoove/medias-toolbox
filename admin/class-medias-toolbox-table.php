@@ -2,7 +2,7 @@
 /**
  * The admin-specific functionality of the plugin
  *
- * @link https://neoslab.com
+ * @link https://sqoove.com
  * @since 1.0.0
  * @package Medias_Toolbox
  * @subpackage Medias_Toolbox/admin
@@ -12,7 +12,7 @@
  * Class `Medias_ToolBox_Table`
  * @package Medias_Toolbox
  * @subpackage Medias_Toolbox/admin
- * @author NeosLab <contact@neoslab.com>
+ * @author Sqoove <support@sqoove.com>
 */
 class Medias_ToolBox_Table extends WP_List_Table
 {
