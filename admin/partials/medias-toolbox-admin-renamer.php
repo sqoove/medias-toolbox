@@ -12,25 +12,25 @@ elseif((isset($_GET['output'])) && ($_GET['output'] === 'error'))
 }
 ?>
 <div class="wrap">
-    <section class="wpbnd-wrapper">
-        <div class="wpbnd-container">
-            <div class="wpbnd-tabs">
+    <section class="wpdx-wrapper">
+        <div class="wpdx-container">
+            <div class="wpdx-tabs">
                 <?php echo $this->return_plugin_header(); ?>
                 <main class="tabs-main">
                     <?php echo $this->return_tabs_menu('tab1'); ?>
                     <section class="tab-section">
                         <?php if(isset($notice)) { ?>
-                        <div class="wpbnd-notice <?php echo esc_attr($notice[0]); ?>">
+                        <div class="wpdx-notice <?php echo esc_attr($notice[0]); ?>">
                             <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <span><?php echo esc_attr($notice[1]); ?></span>
                         </div>
                         <?php } elseif((isset($opts['status']) && ($opts['status']) === 'off')) { ?>
-                        <div class="wpbnd-notice warning">
+                        <div class="wpdx-notice warning">
                             <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <span><?php echo _e('You have not set up your automatic rename options ! In order to do so, please use the below form.', 'medias-toolbox'); ?></span>
                         </div>
                         <?php } else { ?>
-                        <div class="wpbnd-notice info">
+                        <div class="wpdx-notice info">
                             <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <span><?php echo _e('Your plugin is properly configured ! You can change at anytime your automatic rename options using the below form.', 'medias-toolbox'); ?></span>
                         </div>
@@ -38,7 +38,7 @@ elseif((isset($_GET['output'])) && ($_GET['output'] === 'error'))
                         <form method="POST">
                             <input type="hidden" name="mtb-update-renamer" value="true" />
                             <?php wp_nonce_field('mtb-referer-form', 'mtb-referer-renamer'); ?>
-                            <div class="wpbnd-form">
+                            <div class="wpdx-form">
                                 <div class="field">
                                     <?php $fieldID = uniqid(); ?>
                                     <span class="label"><?php echo _e('Automatic Files Renamer', 'medias-toolbox'); ?></span>
@@ -123,7 +123,7 @@ elseif((isset($_GET['output'])) && ($_GET['output'] === 'error'))
                                         foreach($level as $minkey => $minval)
                                         {
                                             $fieldID = uniqid();
-                                            $html = '<div class="break-05"><!-- Line Break 05px --></div>';
+                                            $html = '<div class="wpdx-break"><!-- Line Break 05px --></div>';
                                             $html.= '<label class="radiobox">';
                                             $html.= '<span><b>'.$minval["title"].'</b><br>'.$minval["pattern"].'</span>';
                                             $html.= '<input type="radio" id="'.esc_attr($fieldID).'" name="_medias_toolbox_renamer[pattern]" value="'.$minkey.'" class="common" '.(((isset($opts['pattern'])) && ($opts['pattern'] == $minkey)) ? esc_attr('checked="checked"') : '').' />';

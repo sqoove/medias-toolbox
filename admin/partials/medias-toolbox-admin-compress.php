@@ -5,25 +5,25 @@ if(((isset($_GET['page'])) && ($_GET['page'] === 'medias-toolbox-compress')) && 
 }
 ?>
 <div class="wrap">
-    <section class="wpbnd-wrapper">
-        <div class="wpbnd-container">
-            <div class="wpbnd-tabs">
+    <section class="wpdx-wrapper">
+        <div class="wpdx-container">
+            <div class="wpdx-tabs">
                 <?php echo $this->return_plugin_header(); ?>
                 <main class="tabs-main">
                     <?php echo $this->return_tabs_menu('tab2'); ?>
                     <section class="tab-section">
                         <?php if(isset($notice)) { ?>
-                        <div class="wpbnd-notice <?php echo esc_attr($notice[0]); ?>">
+                        <div class="wpdx-notice <?php echo esc_attr($notice[0]); ?>">
                             <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <span><?php echo esc_attr($notice[1]); ?></span>
                         </div>
                         <?php } else { ?>
-                        <div class="wpbnd-notice info">
+                        <div class="wpdx-notice info">
                             <span class="close-btn" onclick="this.parentElement.style.display='none';">&times;</span>
                             <span><?php echo _e('Below the list of all the images that currently present in your database.', 'medias-toolbox'); ?></span>
                         </div>
                         <?php } ?>
-                        <div class="wpbnd-datatables">
+                        <div class="wpdx-datatables">
                             <?php
                             $records = $this->create_record_database();
                             if(!class_exists('WP_List_Table'))
