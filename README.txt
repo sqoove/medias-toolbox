@@ -3,7 +3,7 @@ Contributors: Sqoove
 Tags: rename, clean, file, files, media
 Requires at least: 4.9
 Tested up to: 6.8.3
-Stable tag: 1.7.9
+Stable tag: 1.8.0
 License URI: https://raw.githubusercontent.com/sqoove/medias-toolbox/refs/heads/main/LICENSE
 
 Medias Toolbox allow you to sanitize and rename automatically media files during upload.
@@ -83,6 +83,10 @@ Medias Toolbox allow you to sanitize and rename automatically media files during
 *	.3g2
 
 == Changelog ==
+
+= 1.8.0 (2025-11-19) =
+* Fontawesome update
+* Code revision and optimization
 
 = 1.7.9 (2025-11-16) =
 * Added WPML support for page content
