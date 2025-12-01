@@ -28,7 +28,7 @@ msgstr "https://wordpress.org/plugins/medias-toolbox/"
 #. Description of the plugin
 #: medias-toolbox.php
 msgid "Medias Toolbox allow you to sanitize and rename automatically media files during upload."
-msgstr "Medias Toolbox vous permet d’assainir et de renommer automatiquement les fichiers médias lors du téléversement."
+msgstr "Medias Toolbox vous permet d'assainir et de renommer automatiquement les fichiers médias lors du téléversement."
 
 #. Author of the plugin
 #: medias-toolbox.php
@@ -70,11 +70,11 @@ msgstr "Vos paramètres ont été mis à jour avec succès."
 
 #: admin/partials/medias-toolbox-admin-renamer.php:10
 msgid "The file renamer status is not valid !!"
-msgstr "L’état du renommeur de fichiers n’est pas valide !!"
+msgstr "L'état du renommeur de fichiers n'est pas valide !!"
 
 #: admin/partials/medias-toolbox-admin-renamer.php:30
 msgid "You have not set up your automatic rename options ! In order to do so, please use the below form."
-msgstr "Vous n’avez pas configuré vos options de renommage automatique ! Pour ce faire, veuillez utiliser le formulaire ci-dessous."
+msgstr "Vous n'avez pas configuré vos options de renommage automatique ! Pour ce faire, veuillez utiliser le formulaire ci-dessous."
 
 #: admin/partials/medias-toolbox-admin-renamer.php:35
 msgid "Your plugin is properly configured ! You can change at anytime your automatic rename options using the below form."

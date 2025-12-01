@@ -91,6 +91,15 @@ Medias Toolbox allows you to sanitize and rename media files automatically durin
 
 ## Changelog
 
+### 1.8.1 (2025-12-01)
+
+- Code revision and optimization
+
+### 1.8.0 (2025-11-19)
+
+- Fontawesome update
+- Code revision and optimization
+
 ### 1.7.9 (2025-11-16)
 
 - Added WPML support for page content

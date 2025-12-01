@@ -62,7 +62,7 @@ msgstr "I media selezionati sono stati compressi con successo!!"
 
 #: admin/partials/medias-toolbox-admin-compress.php:23
 msgid "Below the list of all the images that currently present in your database."
-msgstr "Di seguito l’elenco di tutte le immagini attualmente presenti nel tuo database."
+msgstr "Di seguito l'elenco di tutte le immagini attualmente presenti nel tuo database."
 
 #: admin/partials/medias-toolbox-admin-renamer.php:4
 msgid "Your settings have been successfully updated."
